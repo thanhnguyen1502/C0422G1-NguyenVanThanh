@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>amount</th>
+            <th>From Currency</th>
+            <th>to currency</th>
+        </tr>
+        <tr>
+            <td>
+                <input id="money" type="text">
+            </td>
+            <td>
+                <select id="from">
+                        <option>USD</option>
+                        <option>VND</option>
+                </select>
+            </td>
+            <td>
+                <select id="to">
+                    <option>USD</option>
+                    <option>VND</option>
+                </select>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <button onclick="ketQua()"> result</button>
+            </td>
+            <td>
+                <b id="kq"></b>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function ketQua() {
+        let a = document.getElementById("money").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        if (from=="VND"){
+            if (to=="USD"){
+                document.getElementById("kq").innerText= parseInt(a)/23000+'$';
+            }
+            else {
+                document.getElementById("kq").innerText=a+"VND";
+            }
+        }
+        else if (to=="USD"){
+            document.getElementById("kq").innerText= a+"$";
+        }
+        else
+        {
+            document.getElementById("kq").innerText= parseInt(a)*23000+"VND";
+        }
+        }
+    </script>
+</body>
+</html>
