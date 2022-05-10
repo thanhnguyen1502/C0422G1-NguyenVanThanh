@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <h2>Caculator</h2>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input id="nhap1" type="text">
+            </td>
+            <td colspan="2">
+                <input id="nhap2" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="tong()">Addition(+)</button>
+            </td>
+            <td>
+                <button onclick="hieu()">Suptraction(-)</button>
+            </td>
+            <td>
+                <button onclick="tich()">Multiplication(x)</button>
+            </td>
+            <td>
+                <button onclick="thuong()">Division(/)</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Result Division:
+            </td>
+            <td>
+                <b id = "kq"></b>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function tong() {
+            let number1 = document.getElementById("nhap1").value;
+            let number2 = document.getElementById("nhap2").value;
+            let tong2so= parseInt(number1)+parseInt(number2);
+            document.getElementById('kq').innerHTML= tong2so;
+        }
+        function hieu() {
+            let number1 = document.getElementById("nhap1").value;
+            let number2 = document.getElementById("nhap2").value;
+
+            document.getElementById('kq').innerHTML = parseInt(number1) - parseInt(number2);
+        }
+        function tich() {
+            let number1 = document.getElementById("nhap1").value;
+            let number2 = document.getElementById("nhap2").value;
+
+            document.getElementById('kq').innerHTML = parseInt(number1) * parseInt(number2);
+        }
+        function thuong() {
+            let number1 = document.getElementById("nhap1").value;
+            let number2 = document.getElementById("nhap2").value;
+
+            document.getElementById('kq').innerHTML = parseInt(number1) / parseInt(number2);
+        }
+    </script>
+</body>
+</html>
