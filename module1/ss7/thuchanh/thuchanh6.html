@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <img id="myImage" src="https://img.favpng.com/21/17/5/monkey-d-luffy-roronoa-zoro-one-piece-trafalgar-d-water-law-youtube-png-favpng-wgxM9pb0fxp0xCe23r0hwJ9ZF.jpg"
+        style="width: 20%">
+        <p>Click button below to move the image to right</p>
+        <input type="button" value="Click Me" onclick="moveRight();"/>
+    </form>
+    <script>
+    let imgObj = null;
+    imgObj = document.getElementById("myImage");
+    function init() {
+        imgObj = document.getElementById("myImage");
+        imgObj.style.position = 'relative';
+        imgObj.style.left = '0px';
+    }
+    function moveRight() {
+        imgObj.style.left = parseInt(imgObj.style.left)+ 10 + 'px';
+    }
+    window.onload = init;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timSo (){
+        let max=0;
+            if(a>=b) {
+            if (a >= c) {
+            max = a;
+            }else {
+            max=c;
+            }
+            }else if (b>=c){
+            max=b;
+            }else {
+            max=c;
+            }
+            if (a==max){
+        if (b==max){
+    if (c==max){
+    document.write('-1');
+    }else {
+    document.write(c);
+    }
+    }else if (b>=c){
+    document.write(b);
+    }else if (c==max){
+    document.write(b);
+    }else {
+    document.write(c);
+    }
+    }else if (b==max){
+    if (a>=c){
+    document.write(a);
+    }else if (c==max) {
+    document.write(a);
+    }else {
+    document.write(c);
+    }
+    }else if (a>=b){
+    document.write(a);
+    }else {
+    document.write(b);
+    }
+    }
+</script>
+</body>
+</html>

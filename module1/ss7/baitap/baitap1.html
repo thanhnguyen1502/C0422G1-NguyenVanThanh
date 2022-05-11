@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table >
+        <tr>
+            <b>Tính chỉ số cân nặng</b>
+        </tr>
+        <tr>
+            <td>nhập cân nặng: (kg)</td>
+            <td>
+                <input id="canNang" type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>nhập chiều cao: (m)</td>
+            <td>
+                <input id="chieuCao" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="tinhToan()">xem kết quả</button>
+            </td>
+            <td>
+                <p id="result"></p>
+            </td>
+        </tr>
+    </table>
+    <script>
+        function tinhToan (){       <!-- parseFloat:    nhận được số 0.0000
+                                         parseInt:      chỉ nhận số nguyên-->
+
+            let cannang = parseFloat(document.getElementById("canNang").value);
+            let chieucao = parseFloat(document.getElementById("chieuCao").value);
+            let imb = cannang/(chieucao)*(chieucao);
+
+            if (imb <18){
+                document.getElementById("result").innerText = "gay";
+            }
+            else if (imb<25.0)
+            {
+                document.getElementById("result").innerText = "bình thường";
+            }
+            else if (imb<30.0){
+                document.getElementById("result").innerText = "béo";
+            }else {document.getElementById("result").innerText="mập ịt"
+            }
+        }
+
+    </script>
+</body>
+</html>
