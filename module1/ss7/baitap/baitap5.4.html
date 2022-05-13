@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = prompt("diem bai kiem tra:");
+        let b = prompt("diem thi giua ky:");
+        let c = prompt("diem thi cuoi ky");
+        tongDiem = (parseInt(a)+parseInt(b*2)+parseInt(c*3))/6;
+        if (tongDiem>8){
+            document.write("hoc sinh Gioi!");
+        }else if (tongDiem>=6.5){
+            document.write("hoc sinh Kha!");
+        }else if (tongDiem>=5.5){
+            document.write("hoc sinh Trung Binh")
+        }else{
+            document.write("chuc ban may man lan sau");
+        }
+    </script>
+</body>
+</html>

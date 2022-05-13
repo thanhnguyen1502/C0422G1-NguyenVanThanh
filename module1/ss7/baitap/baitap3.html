@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Kiểm tra số ngày trong tháng</h1>
+    <table>
+        <tr>
+            <th>
+                <input min="1" max="12"  type="number" id="thang" >
+            </th>
+            <th>
+                <button  onclick="tinhSongay()">TÍNH SỐ NGÀY</button>
+            </th>
+        </tr>
+        <tr>
+            <th id="ketqua">
+                ĐÂY LÀ CHỖ HIỆN THỊ KẾT QUẢ
+
+            </th>
+
+        </tr>
+        <script>
+            function tinhSongay() {
+                let  sothang = document.getElementById("thang").value;
+                switch (sothang) {
+                    case "1" :
+                    case "3":
+                    case "5":
+                    case "7":
+                    case "8":
+                    case "10":
+                    case "12":
+                        document.getElementById("ketqua").innerHTML = "thang " + sothang + " thang nay co 31 ngay";
+                        break;
+                    case "4":
+                    case "6":
+                    case "9":
+                    case "11":
+                        document.getElementById("ketqua").innerHTML ="thang " + sothang +  " thang nay co 30 ngay";
+                        break;
+                    case "2" :
+                        document.getElementById("ketqua").innerHTML ="thang " + sothang +  "thang nay co 28 ngay va 29 ngay";
+                        break;
+                    default:
+                        document.getElementById("ketqua").innerHTML ="thang " + sothang +  "khong dung cu phap";
+                }}
+        </script>
+    </table>
+</div>
+
+
+
+</body>
+</html>

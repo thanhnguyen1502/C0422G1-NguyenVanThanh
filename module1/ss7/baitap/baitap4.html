@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style >
+        button {
+            width: 100%; color: white; background-color: blueviolet;
+         }
+    </style>
+</head>
+<body>
+
+<table border="1" cellspacing="5">
+    <b>Máy tính của Thành</b>
+    <tr>
+        <td colspan="5">
+            <input type="text" id="kq" style="text-align: right">
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <button type="button" value ="1" onclick="set_num(this.value)"> 1 </button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="2" onclick="set_num(this.value)">2</button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="3" onclick="set_num(this.value)">3</button>
+        </td>
+        <td>
+            <button type="button" name="op" value="+" onclick="set_num(this.value)">+</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button type="button" name="btn" value ="4" onclick="set_num(this.value)"> 4 </button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="5" onclick="set_num(this.value)">5</button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="6" onclick="set_num(this.value)">6</button>
+        </td>
+        <td>
+            <button type="button" name="op" value="-" onclick="set_num(this.value)">-</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" name="btn" value ="7" onclick="set_num(this.value)"> 7 </button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="8" onclick="set_num(this.value)">8</button>
+        </td>
+        <td>
+            <button type="button" name="btn" value="9" onclick="set_num(this.value)">9</button>
+        </td>
+        <td>
+            <button type="button" name="op" value="*" onclick="set_num(this.value)">*</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="xoa();">AC</button>
+        <td>
+            <button type="button" name="btn" value="0" onclick="set_num(this.value)">0</button>
+        </td>
+        <td>
+            <button name="result" onclick="ketqua()">=</button>
+        </td>
+        <td>
+            <button type="button" name="op" value="/" onclick="set_num(this.value)">/</button>
+        </td>
+    </tr>
+</table>
+<script>
+    var x='';
+    function a(id) {
+        return document.getElementById(id);
+    }
+    function set_num(num) {
+        x+=num;
+        a('kq').value=x;
+    }
+    function xoa() {
+        x='';
+        a('kq').value=x;
+    }
+    function ketqua() {
+        a('kq').value=eval(a('kq').value); // eval tinh +-*/
+        x=a('kq').value;
+    }
+</script>
+
+</body>
+</html>
