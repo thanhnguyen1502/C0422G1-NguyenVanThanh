@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let charSet;
+    charSet = "<table style='margin: auto' border='1' bgcolor='#ffc0cb'>";
+    v = t = 1;
+    while (v <= 10) {
+        charSet = charSet + "<tr>";
+        while (t < 10) {
+            charSet = charSet + "<td>" + v + "x" + t + "=" + (v * t) + "<td>";
+            t++;
+        }
+        charSet = charSet + "</tr>";
+        t = 1;
+        v++;
+    }
+    charSet = charSet + "</table>";
+    document.write(charSet);
+</script>
+</body>
+</html>

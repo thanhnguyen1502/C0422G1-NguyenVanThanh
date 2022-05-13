@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--                        style='margin: auto' căn giữa ô-->
+<body>
+<script>
+    let ban;
+    ban = "<table style='margin: auto' border='1' width='300' cellspacing='0' cellpadding='3' bgcolor='#ffc0cb'>"
+    i = j = 1;
+    while (i<=10) {
+        ban = ban + "<tr>";
+        while (j<=10){
+            ban = ban + "<td style='text-align: center'>" + i * j + "</td>";
+            j++;
+        }
+        ban = ban + "</tr>";
+        j=1;
+        i++;
+    }
+    ban = ban + "</table>";
+    document.write(ban);
+</script>
+</body>
+</html>
