@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>nhập giá trị a</th>
+        <th>
+            <input type="text" id="ala">
+
+        </th>
+    </tr>
+    <tr>
+        <th>nhập giá trị b</th>
+        <th>
+            <input type="text" id="bla">
+
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" onclick="timX()">Kết quả</button>
+        </th>
+        <th id="ketqua">0
+
+        </th>
+
+    </tr>
+<script>
+    function timX() {
+        let a = document.getElementById("ala").value;
+        let b = document.getElementById("bla").value;
+        timX = -parseInt(b)/a;
+        document.getElementById("ketqua").innerText=timX;
+    }
+</script>
+</table>
+</body>
+</html>
