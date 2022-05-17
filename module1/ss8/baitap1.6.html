@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gamedoanso</title>
+</head>
+<body>
+
+<script>
+    let a = 0;
+    let b = 1;
+    let c;
+    let fibonacci = parseInt(prompt('nhap so :'));
+        for (c = 1; c<fibonacci; c++){
+            c = a + b;
+            a = b;
+            b = c;
+        }
+        document.write(c + "<br>");
+</script>
+</body>
+</html>

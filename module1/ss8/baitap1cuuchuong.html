@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nine chapters</title>
+</head>
+<body>
+    <script>
+        let chapters = "<table style='margin: auto' border='1'  cellspacing='0' cellpadding='3' bgcolor='#ffc0cb'>"
+        i = j = 1;
+        while (i<=10){
+            chapters +=  "<tr>";
+            while (j<10){
+                chapters +=  "<td>"+ j + " x " + i+ " = " + (i*j) + "</td>";
+                j++;
+            }
+            chapters +=  "</tr>";
+            j=1;
+            i++;
+        }
+        chapters +=  "</table>";
+        document.write(chapters);
+    </script>
+</body>
+</html>

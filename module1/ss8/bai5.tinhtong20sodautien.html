@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fibonacciplus</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let c;
+    let sum = a +b;
+    for (let i = 0; i <18; i++) {
+        c = a + b;
+        a = b;
+        b = c;
+        sum += c;
+    }
+    document.write(sum)
+</script>
+</body>
+</html>
