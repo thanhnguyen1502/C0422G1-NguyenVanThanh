@@ -6,25 +6,18 @@
 </head>
 <body>
     <script>
-
-
-        let length = 10;
-        let V = prompt('nhap so vao: ')
-        let arr = [];
-        let i;
-        for (i = 0; i<length;i++){
-            arr[i] = prompt('gia tri cua mang:')
-            index = arr[i]
-
-        }document.write(arr)
-
-        if (V = index){
-            alert('V is in the array')
-
-        }else{
-
-            alert('V is not in the array')
+        let arr = new Array(10)
+        let count = 0
+        for (i=0;i<arr.length;i++){
+            arr[i] = parseInt(prompt('nhâp giá trị thứ ' + (i + 1) + 'của mảng'))}
+        let x = prompt(' nhập giá trị cần tìm ')
+        for (i=0;i<arr.length;i++){
+            if (x == arr[i]){
+            count++}
         }
+        count!=0? document.write(x + 'is in the array'):document.write(x + 'is not in the array')
+
+
 
     </script>
 </body>

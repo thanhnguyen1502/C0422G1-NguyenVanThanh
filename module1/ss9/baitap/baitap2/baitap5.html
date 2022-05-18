@@ -6,18 +6,15 @@
 </head>
 <body>
     <script>
-        let str = prompt("nhap chuoi" )
 
-        let arrString = str.split(',');
-
-        for (i=0;i<str.length;i++){
-
-            if (arrString[i]<0){
-
-                document.write('so nguyen am la' + arrString[i] + "<br>")
+        let arr = []
+        let count = 0;
+        for (i=0;i<10;i++){
+            arr[i] = parseInt(prompt(' nhập số thứ ' + (i + 1) + 'của mảng'))
+            if (arr[i] < 0 ){
+                count ++
             }
-        }
-
+        }document.write(' mảng có ' + count + ' số nguyên âm ')
 
     </script>
 </body>
