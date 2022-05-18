@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let number = prompt('nhap do dai mang')
+        let arr = []
+        let i;
+        for (let i=0;i<number;i++){
+            arr[i]= prompt('nhap gia tri cua mang')
+
+        }document.write('arr = [' + arr +'] <br>' )
+        let first=0
+        let last = arr.length-1
+
+        while (first<last){
+            let a = arr[first]
+            arr[first]=arr[last]
+            arr[last]=a
+            first++
+            last--
+
+        }
+        document.write('dao nguoc '+ arr)
+    </script>
+</body>
+</html>

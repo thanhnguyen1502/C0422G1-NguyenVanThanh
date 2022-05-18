@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str = prompt("nhap chuoi: ");
+        let arr = [];
+        let index
+        let result
+        let total = 0
+        for (i=0; i<str; i++)
+        {
+            arr[i] = prompt("nhap so: " + arr)
+        }
+        let max = arr [0]
+        for (i=0;i<str;i++){
+            if (arr[i]>max){
+                max = arr[i]
+                index = i
+
+
+            } total += arr[i]
+            result = (total/str)
+        }
+
+        document.write("so lon nhat la: " + max + "<br>" + "tai vi tri " + index + "<br>" + "trung binh:" + result)
+
+    </script>
+</body>
+</html>

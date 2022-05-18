@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giá trị lớn nhất</title>
+</head>
+<body>
+    <script>
+
+        let arr = []
+        let max = 0
+        let position =[]
+        for (i=0; i<10;i++){
+            arr[i] = parseInt(prompt('nhập giá trị thứ ' + (i + 1) + 'của mảng'))
+            console.log(arr[i])
+            if (arr[i] > max){
+                max = arr[i]
+                position = i
+                console.log(max)
+            }
+        }document.write('giá trị lớn nhất là ' + max + 'vị trí của index là ' + position + '<br>')
+
+    </script>
+</body>
+</html>
