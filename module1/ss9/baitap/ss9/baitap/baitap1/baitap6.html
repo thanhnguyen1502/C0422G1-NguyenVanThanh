@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr = new Array(10)
+        let count = 0
+        for (i=0;i<arr.length;i++){
+            arr[i] = parseInt(prompt('nhâp giá trị thứ ' + (i + 1) + 'của mảng'))}
+        let x = prompt(' nhập giá trị cần tìm ')
+        for (i=0;i<arr.length;i++){
+            if (x == arr[i]){
+            count++}
+        }
+        count!=0? document.write(x + 'is in the array'):document.write(x + 'is not in the array')
+
+
+
+    </script>
+</body>
+</html>

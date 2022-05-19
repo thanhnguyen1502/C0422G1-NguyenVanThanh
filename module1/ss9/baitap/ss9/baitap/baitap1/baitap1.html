@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let str = []
+        let count = 0
+        let arr = []
+            for (i=0;i<10;i++){
+            str[i] = prompt("nhập số thứ " + (i+1) + ' của mảng')
+                if (str[i] >=10){
+                arr[count] = str[i]
+                    count++;
+            }
+            }document.write(" có " + count + " phần tử lớn hơn hoặc bằng 10 " + "<br>")
+        document.write("các phần tử lớn hơn 10 là: " + arr)
+
+
+    </script>
+</body>
+</html>

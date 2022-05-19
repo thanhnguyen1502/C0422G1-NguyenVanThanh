@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let arr = [0,6,8]
+    // arr.splice(1, 0, 254)
+    // document.write(arr.join("-"));
+
+                    // 0 2 5 4 6 8
+                    //
+
+    let num = prompt("nhap so bat ki: ");
+    let str = num.toString();
+    let result = [str[0]];
+
+    for (let x = 1; x < str.length; x++){
+
+        if ( str[x-1] %2 === 0 && str[x] % 2 === 0)
+        {
+        result.push('-',str[x]);
+        }else
+        {
+        result.push(str[x]);
+        }
+
+    }
+    alert(result.join(''))
+
+</script>
+</body>
+</html>
+

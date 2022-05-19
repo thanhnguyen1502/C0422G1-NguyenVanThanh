@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đếm số từ trong chuỗi</title>
+</head>
+<body>
+
+    <script>
+        var str = prompt('nhap gia tri vao ')
+        document.write('chuỗi mới nhập: ' + str + "<br>")
+        var count = 0;
+        var arr = str.split(' ')
+        for (var i = 0; i<arr.length;i++){
+            if (arr[i] == " ") {
+                continue;
+            }
+            count++
+        }document.write(' chuỗi đó có ' + count + ' ký tự')
+</script>
+</body>
+</html>
