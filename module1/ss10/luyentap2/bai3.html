@@ -6,16 +6,18 @@
 </head>
 <body>
     <script>
-        function letfacTorial() {
-            let num = prompt(' nhập số muốn tìm giai thừa: ')
-            let facTorial = num
-            for (let i = 1; i<num; i++){
-                facTorial *= i
+        function tinhGiaithua() {
+            let num = prompt('nhập số cần tính giải thừa ')
+            giaiThua = 1;
+            for (let i = 1; i<= num; i++){
+                giaiThua = giaiThua * i
+
             }
-            console.log(facTorial)
-            alert(num + " != " + facTorial)
+            console.log(giaiThua)
+            alert(' giai thừa của ' + num + "sẽ là: " + giaiThua)
         }
-        letfacTorial()
+        tinhGiaithua()
+
     </script>
 </body>
 </html>

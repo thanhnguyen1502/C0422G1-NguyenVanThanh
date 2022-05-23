@@ -6,17 +6,19 @@
 </head>
 <body>
     <script>
-        let arr = [5,10,15,20,25,30,35]
 
-        function convertArray(x) {
-            let arr1 = []
-            for (let i = 0; i < x.length; i++) {
-                arr1[x.length - 1 - i] = x[i]
+        let arr1 = [1,2,3,4,5,6]
+
+        function daoNguocMang(x) {
+            let arr = []
+            for (let i = 0; i < x.length; i++){
+                arr[(x.length-1 -i)] = x[i]
+
             }
-            return x = arr1
+            return x = arr
         }
 
-        document.write(" arr = " + convertArray(arr))
+        document.write(daoNguocMang(arr1))
     </script>
 </body>
 </html>

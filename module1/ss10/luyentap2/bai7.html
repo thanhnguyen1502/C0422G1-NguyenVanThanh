@@ -6,20 +6,18 @@
 </head>
 <body>
     <script>
-
-        function convertNum(a, b) {
-            let c = a
+        function daoSo(a,b) {
+            let tmp = a
             a = b
-            b = c
-            return [a, b]
+            b = tmp
+            document.write(a);
+            document.write(',' + b)
         }
-        let num1 = prompt("nhập số thứ nhất")
-        let num2 = prompt("nhập số thứ hai")
-
-        convertNum(num1, num2)
-
-        document.write(num2 + arr)
-
+        let num1 = prompt('nhập số thứ nhất')
+        let num2 = prompt('nhập số thứ hai: ')
+        document.write('trước khi swap: ' + num1 + "," + num2)
+        document.write("<br> sau khi swap: ");
+        daoSo(num1, num2)
     </script>
 </body>
 </html>
