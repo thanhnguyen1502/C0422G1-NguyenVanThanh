@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function smallEst(a,b,c) {
+            let small = a
+            if (b<small){
+                small = b
+            }
+            if (c<small){
+                small = c
+            }
+            return small
+        }
+        let num1 = prompt('nhập số thứ 1')
+        let num2 = prompt('nhập số thứ 2')
+        let num3 = prompt('nhập số thứ 3')
+alert(" số nhỏ nhất trong ba số là " + smallEst(num1,num2,num3))
+    </script>
+</body>
+</html>

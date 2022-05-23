@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <p>
+            <b>Chuyển đổi nhiệt độ</b>
+            <input id = "doiNhietdDo" type="number" placeholder="nhập vào chổ này"
+            oninput="chuyenDoiNhietDo(this.value)"
+                   onchange="chuyenDoiNhietDo(thí.value)"
+            >
+        </p>
+        <p>
+            Celsius: <span id = "outputCelsius"></span>
+        </p>
+    </form>
+    <script>
+        function chuyenDoiNhietDo(value) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputCelsius").innerHTML = (valNum-32)
+        }
+    </script>
+</body>
+</html>

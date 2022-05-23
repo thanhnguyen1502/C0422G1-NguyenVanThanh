@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button type="button" onclick="compare()">nhấn vào đây</button>
+    <script>
+
+        function compare(a,b) {
+            a = parseInt(prompt('nhập tham số thứ nhất 1 : '))
+            b = parseInt(prompt('nhập tham số thứ nhất 2 : '))
+
+        if (a>b) {
+            alert("giá trị đầu lớn hơn")
+        }else {
+            let sum = a + b
+            alert('tổng của a và b là :' + sum)
+        }
+        }
+    </script>
+</body>
+</html>

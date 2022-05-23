@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr = [5,10,15,20,25,30,35]
+
+        function convertArray(x) {
+            let arr1 = []
+            for (let i = 0; i < x.length; i++) {
+                arr1[x.length - 1 - i] = x[i]
+            }
+            return x = arr1
+        }
+
+        document.write(" arr = " + convertArray(arr))
+    </script>
+</body>
+</html>
