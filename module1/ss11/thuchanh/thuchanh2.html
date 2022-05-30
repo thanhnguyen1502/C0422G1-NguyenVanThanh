@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+</head>
+<body>
+<div id="game"></div>
+<script src="script.js">
+    class Circle {
+        constructor(radius) {
+            this.radius = radius;
+        }
+
+        getRadius() {
+            return this.radius;
+        }
+
+        getArea() {
+            return this.radius * this.radius * Math.PI
+        }
+    }
+
+    let dienTich = new Circle(10);
+
+    document.write("diện tích hình tròn là: " + dienTich.getArea())
+    // document.write(dienTich.getRadius())
+</script>
+</body>
+</html>

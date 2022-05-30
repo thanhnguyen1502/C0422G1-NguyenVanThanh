@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+
+
+<script>
+    //  Temperature = function (celsius) {
+    //
+    //     this.celsius = function () {
+    //         return ( (celsius*1.8000) + 32.00)
+    //     }
+    //     this.ToKenvin = function () {
+    //         return (celsius + 273.15 )
+    //
+    //     }
+    //
+    // }
+    // function main(){
+    //     var   rec1 = new Temperature(25);
+    //     var   main2  = rec1.celsius();
+    //     var   main3 =rec1.ToKenvin();
+    //     document.write(" Nhiệt độ F: " + main2 + "<br>" + " Nhiệt độ K:  " + main3);
+    // }
+
+
+    class Temperature{
+        constructor(celsius) {
+            this.celsius = celsius
+        }
+        CelsiustoF(){
+            return ( (this.celsius * 1.8000) + 32)
+        }
+        ToKenvin(){
+            return (this.celsius + 273.15)
+        }
+        // setCelsius(newSelsius){
+        // this.celsius = newSelsius
+        // }
+        // // setToKenvin (newTokenvin){
+        // //     this.getToKenvin = newTokenvin
+        // // }
+        // getcelsius (){
+        //     this.celsius
+        // }
+
+    }
+
+    let tempura = new Temperature(25)
+    // tempura.celsius()
+    document.write("Nhiệt độ C là : " + tempura.CelsiustoF() + "<br>" + "Nhiệt độ F là: "+ tempura.ToKenvin() )
+
+</script>
+
+</body>
+</html>

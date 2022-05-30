@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="demoCanvas" width="200" height="300" ></canvas>
+<script>
+    class Rectangle{
+        constructor(Width,height) {
+            this.width = Width;
+            this.height = height;
+
+        }
+        getWidth(){
+            return this.Width
+        }
+        getHeight(){
+            return this.height
+        }
+        setWidth(newWidth){
+            this.Width = newWidth
+        }
+        setHeight(newHeight){
+            this.height = newHeight
+        }
+       getArea(){
+            return this.Width * this.height;
+
+       }
+       getPreimer(){
+            return (this.height*this.Width) / 2
+       }
+    }
+
+    let hcn = new Rectangle(200,5)
+    hcn.setWidth()
+    hcn.setHeight(100)
+    let Height = hcn.getArea()
+    let Width = hcn.getPreimer()
+    document.write(Rectangle)
+</script>
+</body>
+</html>

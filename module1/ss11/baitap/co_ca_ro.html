@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        class chuot{
+            status; sound_mouse;
+            constructor(Rat, khoiLuong, tocDo,chitChit) {
+                this.Rat = Rat
+                this.khoiLuong = khoiLuong
+                this.tocDo = tocDo
+                this.chitChit = chitChit
+            }
+
+            getStatus(){
+                if (this.status){
+                    document.write('Chuột còn sống !')
+                }else {
+                    document.write("<br> " + "chuột đã chết !")
+                }
+            }
+
+            Chet() {
+                return this.status = false;
+            }
+
+            khongChet(){
+                return this.status = true;
+            }
+
+            chuotHanhDong(sound){
+                this.sound_mouse = sound
+                document.write(this.sound_mouse)
+            }
+        }
+        class meo{
+            sound_cat;
+            constructor(Cat, khoiLuong, tocDo, MeoMeo, Rat) {
+                this.Cat = Cat
+                this.khoiLuong = khoiLuong
+                this.tocDo = tocDo
+                this.MeoMeo = MeoMeo
+
+                }
+            getKhoiLuong(){
+                    return this.khoiLuong;
+            }
+            setMeoMeo(sound_cat){
+                   this.sound_cat = sound_cat
+            }
+            getMeoMeo(){
+                    document.write(this.sound_cat)
+            }
+            actionMeo(sound){
+                this.sound_cat = sound
+                document.write(this.sound_cat)
+            }
+            batChuot(chuot){
+                if (chuot.tocDo < this.tocDo){
+                    document.write(' mèo bắt được chuột !')
+                    return true
+                }else {
+                    document.write(" mèo không bắt được chuột !")
+                    return false
+                }
+            }
+            anChuot(chuot){
+                if (chuot.khongChet()&&this.batChuot(chuot)){
+                    this.khoiLuong = this.khoiLuong + chuot.khoiLuong;
+                    chuot.status = false;
+                    document.write("<br>" + ' chuột đã bị mèo ăn !')
+                }else{
+                    document.write(' mèo không ăn được! ')
+                }
+            }
+        }
+        let Rat = new chuot("Rat", 5, 25)
+        let Tom = new meo("Tom",30,22,0,Rat)
+
+
+        Tom.batChuot(Rat);
+        Tom.anChuot(Rat)
+        Rat.getStatus()
+        document.write("<br>" + "cân nặng của mèo là: " + Tom.getKhoiLuong());
+    </script>
+</body>
+</html>
